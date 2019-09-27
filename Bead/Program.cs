@@ -19,13 +19,14 @@ namespace GITHUB_beadas
 
 
 
-
+            Console.WriteLine("Adja meg a lsita meretet: ");
+            int listameret=(Convert.ToInt32(Console.ReadLine()));
             int kapott = 0;
+            
 
 
 
-
-            while (kapott != 10)
+            while (kapott != listameret)
             {
                 Console.WriteLine("Adjon meg egy szamot: ");
                 szamok.Add(Convert.ToInt32(Console.ReadLine()));
@@ -35,7 +36,7 @@ namespace GITHUB_beadas
 
 
             Console.WriteLine("A legnagyobb szam: " + szamok.Max());
-           
+            Console.WriteLine("A legkisebb szam: " + szamok.Min());
 
 
             Console.ReadKey();
