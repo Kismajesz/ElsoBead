@@ -17,17 +17,15 @@ namespace GITHUB_beadas
             List<int> szamok = new List<int>(10);
 
 
+
+
+
             int kapott = 0;
-           
-
-
-            Console.WriteLine("Adja meg a lista nagysagat: ");
-            int listameret = Convert.ToInt32(Console.ReadLine());
 
 
 
 
-            while (kapott != listameret)
+            while (kapott != 10)
             {
                 Console.WriteLine("Adjon meg egy szamot: ");
                 szamok.Add(Convert.ToInt32(Console.ReadLine()));
